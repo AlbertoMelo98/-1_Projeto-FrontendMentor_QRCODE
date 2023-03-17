@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .attribution {
+            justify-content: center;
+            display: flex;
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+            background-color: hsl(212, 45%, 89%);
+            margin: 0;
+            min-height: 5vh;
+        }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        body {
+            margin: 0 auto;
+            font-family: "Outfit", sans-serif;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .conteudo {
+            margin: 0 auto;
+            background-color: hsl(212, 45%, 89%);
+            align-items: center;
+            font-size: 15px;
+            justify-content: center;
+            display: flex;
+            min-height: 95vh;
+        }
+
+        .fundoCentro {
+            background-color: #d5e1ef;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .fundoQrCode {
+            background-color: #FFFFFF;
+            margin: 0 16px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 19px
+        }
+
+            .fundoQrCode .QrCode {
+                width: 100%;
+                border-radius: 9px;
+            }
+
+        .titulo {
+            color: hsl(218, 44%, 22%);
+            padding-bottom: 16px;
+        }
+
+        .texto {
+            color: hsl(220, 15%, 55%);
+            font-size: 15px;
+            padding-bottom: 20px;
+        }
+        /* ======RESPONSIVO==========*/
+        @media (max-width: 425px) {
+            .fundoCentro {
+                max-width: 375px;
+            }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/AlbertoMelo98">Alberto Melo</a>.
+        </div>
+        <div class="conteudo">
+            <div class="fundoCentro">
+                <div class="fundoQrCode">
+                    <img class="QrCode" src="./images/image-qr-code.png" alt="Alternate Text" />
+                    <H2 class="titulo"> Improve your front-end skills by building projects</H2>
+                    <p class="texto">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
